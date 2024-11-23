@@ -1,0 +1,264 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1f1f1f;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+header .logo h1 {
+    font-size: 1.8rem;
+    color: #e50914;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #e50914;
+}
+
+/* Search Bar */
+.search-bar {
+    margin-left: 2rem;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    width: 200px;
+    transition: width 0.3s ease;
+}
+
+.search-bar input:focus {
+    width: 300px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 5rem 1rem;
+    background: linear-gradient(to bottom, #333, #121212);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #e50914;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Content Section */
+.content {
+    padding: 2rem;
+}
+
+.content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #e50914;
+}
+
+/* Grid Layout for Movies/Series */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    text-align: center;
+    background: #1f1f1f;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card p {
+    margin: 0.5rem 0;
+    color: #ffffff;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Video Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.modal-content {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    background: #000;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.modal-content video {
+    width: 100%;
+    display: block;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .search-bar {
+        margin: 1rem 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* General body styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    background: #000; /* Dark background for cinematic look */
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Center video player */
+.video-player-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Adjusts the height of the player section */
+    margin-bottom: 20px;
+}
+
+video {
+    max-width: 80%; /* Video width for responsiveness */
+    max-height: 100%; /* Maintain aspect ratio */
+    border: 3px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Related Movies Section */
+.More-movies {
+    text-align: center;
+    padding: 20px;
+    background-color: #121212; /* Slightly lighter background for distinction */
+}
+
+.More-movies h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #ffcc00; /* Highlighted title color */
+}
+
+/* Movies grid layout */
+.movies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between movie cards */
+}
+
+/* Individual movie card */
+.movie-card {
+    width: 150px;
+    text-align: center;
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card img:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.movie-card p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.movie-card a {
+    text-decoration: none;
+    color: inherit;
+}
