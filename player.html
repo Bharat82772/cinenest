@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineNest - Video Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <!-- Centered Video Player Section -->
+        <div class="video-player-container">
+            <video id="videoPlayer" controls autoplay>
+                <source id="videoSource" src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Related Movies Section -->
+        <section class="More-movies">
+            <h2>More Movies</h2>
+            <div class="movies-grid">
+                <!-- Example Related Movies -->
+                <div class="movie-card">
+                    <a href="player.html?video=movie2.mp4&title=Pushpa Part-1">
+                        <img src="https://imgs.search.brave.com/uVENDAME126IB9LNeBnTV0mhhYgrqCEKuqiBFkCG5Wo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJiYXQuY29t/L2ltZy83MzkwMjQt/dGhvcmZpbm4tdmlu/bGFuZC1zYWdhLXdh/bGxwYXBlci1zYWdh/LWFydC1jb29sLWFu/aW1lLXBpY3R1cmUt/YW5pbWUtc2NlbmVy/eS5qcGc" alt="Vinland saga">
+                        <p>Vinland saga</p>
+                    </a>
+                </div>
+                <div class="movie-card">
+                    <a href="player.html?video=movie3.mp4&title=Devara">
+                        <img src="https://imgs.search.brave.com/EJczUFl7m6T7r-G0fYRx7KXzhPwmpUioTBXivUlA-bM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXIuZG9nL2xh/cmdlLzIwNTQ0NTI5/LmpwZw" alt="cocomelon">
+                        <p>funny bear</p>
+                    </a>
+                </div>
+                <div class="movie-card">
+                    <a href="player.html?video=movie4.mp4&title=RRR">
+                        <img src="https://imgs.search.brave.com/pFb3H0w86nrCAiwKw_rmoLwkLsx_IPPozt110Y0gdUA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA2LzIwLzQ4Lzc2/LzM2MF9GXzYyMDQ4/NzY4NV80akEzQ2pa/N01WOUx4YVMyWTR4/RUd1ajhVaWo3cDBm/ZC5qcGc" alt="UFO">
+                        <p>UFO</p>
+                    </a>
+                </div>
+                <!-- Add more movie cards as needed -->
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Fetch video source and title from URL parameters
+        const params = new URLSearchParams(window.location.search);
+        const videoSrc = params.get('video');
+        const videoTitle = params.get('title');
+
+        // Set video source dynamically
+        if (videoSrc) {
+            document.getElementById('videoSource').src = videoSrc;
+            document.title = `CineNest - ${videoTitle}`;
+        } else {
+            alert("No video source found!");
+        }
+    </script>
+</body>
+</html>
