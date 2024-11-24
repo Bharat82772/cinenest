@@ -14,8 +14,8 @@ I wanted to create a site similar to Netflix but less expensive. Platforms like 
 
 During the creation of this project, I explored and learned various technologies and skills:
 1. **HTML**: For structuring the web pages and laying the foundation of the site.
-2. CSS: To style the site, making it visually appealing and responsive for both desktop and mobile users.
-3. JavaScript: To add functionality like dynamic video playback and modal windows for better user interaction.
+2. **CSS**: To style the site, making it visually appealing and responsive for both desktop and mobile users.
+3. **JavaScript**: To add functionality like dynamic video playback and modal windows for better user interaction.
 4. **Git and GitHub**: To manage code versioning and host the site online.
 5. **Project Structuring**: Organizing files like videos, images, scripts, and stylesheets effectively.
 
