@@ -262,3 +262,53 @@ video {
     text-decoration: none;
     color: inherit;
 }
+
+
+/*loginform*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.login-container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#loginForm {
+    margin-top: 20px;
+}
+
+#loginForm input[type="text"], #loginForm input[type="password"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#loginForm button[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: #e50914;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#loginForm button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
